@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics - put your tag HERE! -->
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta tags for SEO - FILL IN DESCRIPTION AND KEY WORDS HERE! -->
+    <meta name="description" content="...">
+    <meta name="keywords" content="...">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/css/Main.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/Main.css">
+
+    <!-- The tile is the label for the tab in the browser -->
+    <title>My Shop | Welcome</title>
+  </head>
+
+  <!-- Header -->
+    <header>
+        <div class="header">
+
+           <!--NAVBAR-->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id=products-nav-container>
+            <div>
+              
+            </div>  
+            <a class="navbar-brand" href="index.html">MyShop</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item-active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item-active">
+                    <a class="nav-link" href="#">Products<span class="sr-only">(current)</span></a>
+                  </li>
+                  </li>
+                  <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Product 1</a>
+                      <a class="dropdown-item" href="#">Product 2</a>
+                      <a class="dropdown-item" href="#">Product 3</a>
+                    </div>
+                  </li> -->
+                </ul>
+              </div>
+            </nav>
+        </div>
+    </header>
+
+ <!--JUMBOTRON-->
+<!-- <div class="jumbotron">
+    <div class="container">
+        <h1>Welcome to 10kidslater.com!</h1>
+        <hr>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, nesciunt obcaecati nihil deserunt tenetur dolores alias veniam sint at laborum fuga dolore, quas nam itaque adipisci, minus ratione incidunt facilis.</p>
+    </div>
+</div> -->
+
+  <!-- PRODUCTS SECTION -->
+  <section class="products-container">
+
+    <div id="product-list">
+      <div class="product-box">
+        <div class="product-label">
+          <h6>Product 1 Label</h6>
+        </div>
+        <div>
+          <img src="/Images/Belt.jpeg" class="product-image" alt="...">
+        </div>
+        <div>
+          <p class= "product-price">$10.00</p>
+        </div>
+        <div class="button-div">
+          <span><button class="heart" onclick="addtoCart()"><i class="fa fa-heart"></i></button></span>
+          <span><button class="cart" onclick="addtoCart()"><i class="fa fa-cart-plus"></i></button></span>
+        </div>
+      </div>
+      <div class="product-box">
+        <div>
+          <h6>Product 2 Label</h6>
+        </div>
+        <div>
+          <img src="/Images/Drone.jpg" class="product-image" alt="...">
+        </div>
+        <div>
+          <p>$8.00</p>
+        </div>
+      </div>
+      <div class="product-box">
+        <div>
+          <h6>Product 3 Label</h6>
+        </div>
+        <div>
+          <img src="/Images/Race.jpg" class="product-image" alt="...">
+        </div>
+        <div>
+          <p>$8.00</p>
+        </div>
+      </div>
+      <div class="product-box">
+          <div>
+              <h6>Product 4 Label</h6>
+            </div>
+      </div>
+      <div class="product-box">
+          <div>
+              <h6>Product 5 Label</h6>
+            </div>
+      </div>
+      <div class="product-box">
+          <div>
+              <h6>Product 6 Label</h6>
+          </div>
+      </div>
+      <div class="product-box">
+          <div>
+              <h6>Product 7 Label</h6>
+          </div>
+      </div>
+      <div class="product-box">
+          <div>
+              <h6>Product 8 Label</h6>
+          </div>
+      </div>
+      <div class="product-box">
+          <div>
+              <h6>Product 9 Label</h6>
+          </div>
+      </div>
+    </div>
+
+      <!-- THE CART-->
+    <aside class="myCart">
+      <h4 >My Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4> <!-- NEED TO MAKE THIS DYNAMIC-->
+      <hr>
+      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+      <hr>
+       <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+      <hr>
+      <button>Checkout</button>
+    </aside>
+
+  </section>
+
+  <body>
+
+    <!-- CONNECT TO MAIN JS FILE -->
+    <script src="/Main.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
+  <footer id="myFooter">
+      <div class="social-networks">
+          <a href="mailto: support@myshop.com" class="email"><i class="fa fa-envelope"></i></a> <!-- UPDATE THIS EMAIL TO YOUR SUPPORT EMAIL, consider using a form to mitigate attacks from spam bots--> 
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> <!--UPDATE THIS LINK TO YOUR FB PAGE-->
+      </div>
+      <div class="footer-copyright">
+          <p>MyShop &copy; <script>document.write(new Date().getFullYear())</script>  |  Copyright </p>
+      </div>
+  </footer>
+ 
+</html>

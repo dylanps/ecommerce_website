@@ -1,0 +1,273 @@
+body {
+    background-color: rgb(202, 199, 199);
+    padding-top: 75px;
+}
+
+/* GLOBAL */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.card-deck {
+    padding: 0% 10% 2% 10%;
+    position: center;
+    width: 100%;
+}
+
+.crop {
+   padding-right: -50px;
+}
+
+.carousel {
+    height: 832px;
+    padding-top: 1%;
+}
+
+.sidebar {
+    float:right;
+    width: 20%;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.header{
+    color: white;
+    text-align: center;
+    min-height: 50px;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 300;
+}
+
+#home-carousel {
+    padding-top: 50px;
+}
+
+.footer{
+    margin: auto;
+    text-align: center;
+    color: white;
+    background-color: black;
+    min-height: 200px;
+    position: absolute; /* Set the navbar to fixed position */
+    bottom: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.footer-left {
+    float: left;
+    width: 25%;
+}
+
+.footer-center {
+    float: center;
+    width: 50%;
+    text-align: center;
+}
+
+.footer-right {
+   float: right;
+    width: 25%;
+}
+
+.footer-logo {
+    width: 100px;
+    height: 100px;
+}
+
+#home-nav-container {
+    padding-left: 10%;
+}
+
+#products-nav-container {
+    grid-column: 1/4;
+    padding-left: 10%;
+}
+
+/* PRODUCTS PAGE*/
+
+/* Flexbox */
+@media(min-width:767px) {
+    .products-container {
+        display: flex;
+        width: 95%;
+        /* margin: auto; */
+        overflow: hidden;
+        justify-content: space-between;
+        max-height: 550px;
+    }
+}
+
+/* CSS Grid */
+#product-list {
+    flex:4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    background-color: white;
+    padding: 10px 0px 0px 30px;
+    overflow-y: scroll;
+}
+
+.product-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(237, 236, 234);
+    color: black;
+    min-height: 250px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.product-box:hover {
+    box-shadow: -5px 5px 15px grey;
+}
+
+.product-label {
+    /* margin: auto; */
+}
+
+.product-label h6{
+    text-align: center;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+
+}
+
+.product-image {
+    height: 140px;
+    width: 140px;
+}
+
+.product-price {
+    font-family: oxygen;
+}
+
+.button-div {
+    display: flex;
+    flex-direction: row;
+    margin-left: 110px;
+    margin-right: 110px;
+    justify-content: space-between;
+}
+
+.button-div button {
+    border-radius: 50%;
+}
+
+.heart:hover {
+    color: red;
+}
+
+.cart:hover {
+    color: green;
+}
+
+
+
+aside.myCart {
+    flex:1;
+    background-color: #e7e4e4;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+#myCart .checkoutButton {
+    position: 10%;
+}
+
+/* CHECKOUT PAGE */
+
+.checkoutButton {
+    border-radius: 8px;
+}
+
+span.price {
+    float: right;
+    color: grey;
+}
+
+/* FOOTER CSS */
+
+#myFooter {
+    background-color: #182c39;
+    color: white;
+    position: absolute;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#map-container {
+    height: 240px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#myFooter .row {
+    margin: 0 85px;
+}
+
+#myFooter .footer-copyright {
+    background-color: #10222e;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 38px;
+}
+
+#myFooter .fa {
+    font-size: 30px;
+    margin-right: 15px;
+    margin-left: 20px;
+    background-color: white;
+    color: #182c39;
+    border-radius: 51%;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 31px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+#myFooter .fa-facebook:hover {
+    color: #2b55ff;
+}
+
+#myFooter .fa-facebook:focus {
+    color: #2b55ff;
+}
+
+#myFooter .fa-envelope:hover {
+    color: green;
+}
+
+#myFooter .fa-envelope:focus {
+    color: green;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+    #myFooter .row {
+        margin: 0;
+    }
+}
