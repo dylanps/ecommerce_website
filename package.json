@@ -1,0 +1,19 @@
+{
+  "name": "ecommerce_website",
+  "version": "1.0.0",
+  "description": "My First E-commerce website",
+  "main": "Main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylanps/ecommerce_website.git"
+  },
+  "author": "Dylan Sellers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dylanps/ecommerce_website/issues"
+  },
+  "homepage": "https://github.com/dylanps/ecommerce_website#readme"
+}
